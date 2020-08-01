@@ -23,13 +23,16 @@ html, body {
   background-color: var(--color-bg);
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+
+}
 
 .header {
   font-family: 'Playfair Display', serif;
-  margin: 0 auto;
   font-weight: 300;
-  max-width: 1000px;
-  padding: 2rem 1.5rem;
 }
 
 .title {
@@ -38,4 +41,8 @@ html, body {
 
 .subtitle {
   color: var(--color-secondary)
+}
+
+.output {
+  font-size: 1.4rem;
 }
