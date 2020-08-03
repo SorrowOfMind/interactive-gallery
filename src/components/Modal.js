@@ -30,7 +30,7 @@ const Modal = () => {
     const {modal, setModal} = useContext(ModalCtx);
 
     const closeModal = e => {
-        if (e.currentTarget.id === 'backdrop') setModal(false);
+        if (e.target.id === 'backdrop') setModal(false);
     }
 
     return (
