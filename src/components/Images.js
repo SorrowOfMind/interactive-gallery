@@ -1,13 +1,16 @@
 import React, {useContext} from 'react';
 import useFirestore from '../hooks/useFirestore';
 import {ImgCtx} from '../contexts/ImgCtx';
+import {ModalCtx} from '../contexts/ModalCtx';
 
 const Images = () => {
     const {setLargeImgUrl} = useContext(ImgCtx);
+    const {setModal} = useContext(ModalCtx);
     const {docs} = useFirestore('images');
 
     const handleLargeImg = e => {
         const {src} = e.target;
+        setModal(true);
         setLargeImgUrl(src);
     }
 

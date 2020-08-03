@@ -4,6 +4,7 @@ import UploadForm from './components/UploadForm';
 import Images from './components/Images';
 import Modal from './components/Modal';
 import ImgCtxProvider from './contexts/ImgCtx';
+import ModalCtxProvider from './contexts/ModalCtx';
 
 function App() {
 
@@ -12,8 +13,10 @@ function App() {
             <Header/>
             <UploadForm/>
             <ImgCtxProvider>
+            <ModalCtxProvider>
                 <Images/>
                 <Modal/>
+            </ModalCtxProvider>
             </ImgCtxProvider>
         </div>
     );
